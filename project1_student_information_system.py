@@ -1,0 +1,13 @@
+print("Student Information System ")
+name = input("Enter your Name: ")
+age = input("Enter your Age: ")
+city = input("Enter your City: ")
+cgpa = input("Enter your CGPA: ")
+is_student = True
+print("\n===== Student Profile =====")
+print("Name:", name)
+print("Age:", age)
+print("City:", city)
+print("CGPA:", cgpa)
+print("Student:", is_student)
+print("\nStudent information has been recorded successfully!")
