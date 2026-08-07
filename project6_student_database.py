@@ -1,4 +1,4 @@
-# Project 6 - Student Database Pro
+# Project 6 - Student Database 
 print("WELCOME TO STUDENT DATABASE")
 students = []
 def add_student():
