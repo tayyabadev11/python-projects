@@ -30,7 +30,6 @@ def search_student():
     for student in students:
         if student["Roll Number"] == roll:
             print("\nStudent Found")
-
             for key in student:
                 print(key, ":", student[key])
             found = True
