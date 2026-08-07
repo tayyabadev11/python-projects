@@ -19,9 +19,7 @@ def view_students():
         print("No Student Record Found")
     else:
         print("\nSTUDENT RECORDS")
-
         for student in students:
-            print("-------------------")
             for key in student:
                 print(key, ":", student[key])
 def search_student():
