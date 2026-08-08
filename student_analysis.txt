@@ -1,0 +1,7 @@
+ SMART STUDENT RECORD
+Student Name : Ayesha 
+Age          : 20
+City         : Karachi
+Marks        : 70
+Grade        : B
+Result       : PASS
