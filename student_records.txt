@@ -1,0 +1,7 @@
+          STUDENT RECORD
+Student Name : Hania 
+Age          : 20
+City         : Lahore
+Marks        : 900
+Grade        : A
+Result       : PASS
