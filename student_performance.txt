@@ -1,0 +1,11 @@
+STUDENT PERFORMANCE REPORT
+========================================
+Student Name      : Hania 
+Age               : 20
+Marks             : 90.0
+Grade             : A
+Result            : PASS
+Performance       : Excellent Performance
+Marks Square      : 8100.0
+Marks Square Root : 9.49
+Challenge Number  : 6
