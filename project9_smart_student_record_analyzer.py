@@ -1,15 +1,19 @@
 # Project 9 - Smart Student Record Analyzer
-print(" SMART STUDENT RECORD ANALYZER")
+
+print("===== Smart Student Record Analyzer =====")
+
 try:
-    # Student Information
+    # Get student information
     name = input("Enter Student Name: ").title()
     age = int(input("Enter Student Age: "))
     city = input("Enter Student City: ").title()
     marks = int(input("Enter Student Marks: "))
-    # Check Marks
+
+    # Validate marks
     if marks < 0 or marks > 100:
-        raise ValueError
-    # Grade
+        raise ValueError("Marks must be between 0 and 100.")
+
+    # Determine grade
     if marks >= 80:
         grade = "A"
     elif marks >= 70:
@@ -20,33 +24,45 @@ try:
         grade = "D"
     else:
         grade = "F"
-    # Result
+
+    # Determine result
     if marks >= 50:
         result = "PASS"
     else:
         result = "FAIL"
-except ValueError:
+
+except ValueError as error:
     print("\nError: Please enter valid information.")
-    print("Age and Marks must be numbers.")
-    print("Marks must be between 0 and 100.")
+
+    if str(error) == "Marks must be between 0 and 100.":
+        print("Marks must be between 0 and 100.")
+    else:
+        print("Age and Marks must be numbers.")
+
 else:
-    file = open("student_analysis.txt", "w")
-    file.write(" SMART STUDENT RECORD\n")
-    file.write("Student Name : " + name + "\n")
-    file.write("Age          : " + str(age) + "\n")
-    file.write("City         : " + city + "\n")
-    file.write("Marks        : " + str(marks) + "\n")
-    file.write("Grade        : " + grade + "\n")
-    file.write("Result       : " + result + "\n")
-    file.close()
+    # Write student information to a file
+    with open("student_analysis.txt", "w") as file:
+        file.write("===== Smart Student Record =====\n")
+        file.write("Student Name : " + name + "\n")
+        file.write("Age          : " + str(age) + "\n")
+        file.write("City         : " + city + "\n")
+        file.write("Marks        : " + str(marks) + "\n")
+        file.write("Grade        : " + grade + "\n")
+        file.write("Result       : " + result + "\n")
+
     print("\nStudent record saved successfully!")
-    file = open("student_analysis.txt", "r")
-    saved_record = file.read()
-    file.close()
-    print("SAVED STUDENT RECORD")
+
+    # Read student information from the file
+    with open("student_analysis.txt", "r") as file:
+        saved_record = file.read()
+
+    # Display saved record
+    print("\n===== Saved Student Record =====")
     print(saved_record)
+
     print("Record loaded successfully!")
+
 finally:
-    print("Student record process completed.")
+    print("\nStudent record process completed.")
     print("Thank you for using the program!")
-print("PROGRAM CLOSED")
+    print("===== Program Closed =====")
