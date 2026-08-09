@@ -1,14 +1,14 @@
 # Project 3 - Student Grade Checker
-print("      STUDENT GRADE CHECKER")
-# Taking Input
+print("===== Student Grade Checker =====")
+# Get student information
 student_name = input("Enter Student Name: ")
 marks = int(input("Enter Student Marks: "))
-# Bonus Marks (Assignment Operator)
+# Add bonus marks
 marks += 5
-# Marks should not be greater than 100
+# Limit marks to a maximum of 100
 if marks > 100:
     marks = 100
-# Grade System
+# Determine grade
 if marks >= 80:
     grade = "A"
 elif marks >= 70:
@@ -19,27 +19,28 @@ elif marks >= 50:
     grade = "D"
 else:
     grade = "F"
-# Result
+# Determine result
 if marks >= 50:
     result = "PASS"
 else:
     result = "FAIL"
-# Comparison Operator
+# Comparison operation
 passed = marks >= 50
-# Logical Operator
+# Logical operation
 scholarship = marks >= 80 and result == "PASS"
-# Display Result
-print("  STUDENT REPORT")
-print("Student Name        :", student_name)
-print("Final Marks         :", marks)
-print("Grade               :", grade)
-print("Result              :", result)
-print("Passed              :", passed)
-print("Scholarship Eligible:", scholarship)
+# Display student report
+print("\n===== Student Report =====")
+print("Student Name         :", student_name)
+print("Final Marks          :", marks)
+print("Grade                :", grade)
+print("Result               :", result)
+print("Passed               :", passed)
+print("Scholarship Eligible :", scholarship)
+# Display appropriate message
 if scholarship:
     print("Excellent! You are eligible for a scholarship.")
 elif result == "PASS":
-    print("Congratulations! Keep working hard.")
+    print("Congratulations! You have passed.")
 else:
-    print("Don't give up. Practice and try again!")
-print("Thank you for using the Student Grade Checker!")
+    print("Keep practicing and try again.")
+print("\nThank you for using the Student Grade Checker!")
