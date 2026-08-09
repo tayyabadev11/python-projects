@@ -8,7 +8,7 @@ development skills.
 - Python
 - Git & GitHub
 - VS Code
-- 
+
 # What I'm Practicing
 - Python fundamentals
 - Conditional statements
