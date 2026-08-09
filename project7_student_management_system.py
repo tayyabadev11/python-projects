@@ -13,8 +13,6 @@ def calculate_grade(marks):
         return "D"
     else:
         return "F"
-
-
 # Calculate pass or fail result
 def calculate_result(marks):
     if marks >= 50:
