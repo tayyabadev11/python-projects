@@ -39,6 +39,6 @@ This project combines multiple Python concepts into one practical application, i
 3. Follow the menu options displayed in the terminal.
 4. Add and analyze student records.
 ## Author
-**Tayyaba Zafar**
+Tayyaba Zafar
 Bachelor of Artificial Intelligence  
 University of Wah, Pakistan
