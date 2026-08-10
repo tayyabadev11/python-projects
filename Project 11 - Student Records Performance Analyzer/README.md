@@ -40,5 +40,5 @@ This project combines multiple Python concepts into one practical application, i
 4. Add and analyze student records.
 ## Author
 Tayyaba Zafar
-Bachelor of Artificial Intelligence  
+(Bachelor of Artificial Intelligence)
 University of Wah, Pakistan
